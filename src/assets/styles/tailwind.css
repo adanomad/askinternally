@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 @layer utilities {
   .bg-page {
     background-color: var(--aw-color-bg-page);
@@ -90,3 +92,18 @@
 .dd *:first-child {
   margin-top: 0;
 }
+
+body {
+  font-family: Inter, sans-serif;
+}
+
+.ellipseDiv {
+  width: 100%;
+  position: relative;
+  filter: blur(385px);
+  border-radius: 50%;
+  background-color: #0b63e5;
+  height: 503px;
+  opacity: 0.8;
+  }
+  
