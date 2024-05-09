@@ -11,7 +11,6 @@ import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
-import DiscoverImage from './photo-1519389950473-47ba0277781c.png';
 
 const metadata = {
   title: 'AskInternally — Experience our AI-powered platform: interact with your AI assistant, run models offline, and chat using your data — all locally and privately.',
@@ -22,23 +21,27 @@ const metadata = {
 
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
-  <div className="ellipseDiv"></div>
-  <Hero
-    actions={[
-      {
-        variant: 'primary',
-        text: 'Get Started',
-        href: 'https://github.com/onwidget/astrowind',
-        target: '_blank',
-        icon: 'tabler:click',
-      },
-      { text: 'Sign in with Google', 
-        href: '#features', 
-        icon: 'tabler:brand-google',
+  
+    <div class="absolute left-0 top-1/2 -mt-40 ml-[-50px] w-80 h-80 bg-blue-400 bg-opacity-40 blur-3xl rounded-full"></div>
+    <div class="absolute right-0 top-1/2 -mt-40 mr-[-50px] w-80 h-80 bg-purple-600 bg-opacity-30 blur-3xl rounded-full"></div>
+    <div class="absolute left-1/2 transform -translate-x-1/2 top-1/2 -mt-32 -ml-24 w-3/5 h-64 bg-blue-600 bg-opacity-30 blur-3xl rounded-full"></div>
+    <div class="absolute right-1/4 transform translate-x-1/3 top-1/2 -mt-32 mr-24 w-3/5 h-64 bg-blue-500 bg-opacity-30 blur-3xl rounded-full"></div>
+    <Hero class="ellipseDiv"
+      actions={[
+        {
+          variant: 'primary',
+          text: 'Get Started',
+          href: 'https://github.com/onwidget/astrowind',
+          target: '_blank',
+          icon: 'tabler:click',
         },
-    ]}
+        { text: 'Sign in with Google', 
+          href: '#features', 
+          icon: 'tabler:brand-google',
+          },
+      ]}>
     
-  >
+    
     <Fragment slot="title">
       <span class="text-accent dark:text-white highlight"> AskInternally, </span> Your Offline AI
         Knowledge Assistant
@@ -50,6 +53,7 @@ const metadata = {
       </span>
       
     </Fragment>
+    
   </Hero>
 
   
@@ -114,9 +118,10 @@ const metadata = {
     ]}
     
     image={{
-      src: 'https://s3-alpha-sig.figma.com/img/c44f/e839/c62786f4484aa6858f17b7f42942d696?Expires=1716163200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QiX75IzVV-8i5qRa5F9-DtPhDW7hJMXDXFDHpPO-AqLYEGMS4tLkxAtptGdyTDLDB~3280uQthcLeh8WfglEVB28iprQnOq-Bxp-kBTAIhtDiMwL3g8jhrTRW0f-PGM6YoCbaxDEiCW~fo0RinXmjFSbRXCooyc43L4vVDZNvhuAdFTHshvrKkik2J2fRUAp~8Azxs0m5L0mUF9CZwZ55xKl12YWzHA9VaT33z7C3tFAFgqepssdbTdzfzw3~yCU9w4KmLjmJUslX6aNKCi1B9jA8JioVu1Cxa~yDeRLP-~4Bs6MmrOOL0vVsQC4jY2JAxgQ4sT~D8GHX1Vq-gaz4Q__',
+      src: 'https://i.ibb.co/wJPVZ0L/2a12c26e41e784706eebc097db53bab9.png',
       alt: 'Colorful Image',
     }}
+
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Market Opportunity</h3>
@@ -148,7 +153,7 @@ const metadata = {
       },
     ]}
     image={{
-      src: 'https://s3-alpha-sig.figma.com/img/6101/61b6/2a12c26e41e784706eebc097db53bab9?Expires=1716163200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=m04QYuk5QUiTJWs6DrKgfm7ftcB419lmFxmflLfboj9LQNisNAhQZJoObilw0XzcGCX9SmW68VjeVGPcBWdF89Nbqbz0qlQvZt5v~sQz2-ZNLHdxF9G8tpNqkPfQbhvmrjsPXspr0xKFTAcEyKRR8m8nclZo9Rhf42m-m-V2vx~4N3cQrwAGHQhEpSv5X9IbQekuhmPrFYIuTgWQiQR0TWKR9-d9vGVVx5-THClQNEFIUdSAa~eFAcl~2Dotsql0btsOFJ4NNNnPnkeymSS5jw57UFIjs3kRzyVaDxnTdDzXhFovqxsYYTwoBfkclj~uYHLHvPD7UuvWLCSITkujlQ__',
+      src: 'https://i.ibb.co/HXqn4W1/technology-background-abstract-connected-dots-lines-blue-background-34629-1094.jpg',
       alt: 'Blueprint Image',
     }}
   >
@@ -184,7 +189,7 @@ const metadata = {
       },
     ]}
     image={{
-      src: 'https://s3-alpha-sig.figma.com/img/075b/3461/10f664a176f07d4a2601d540781321ba?Expires=1716163200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=S-2IlVoUICKnHQdO~1w2nMUMGvvVSzE4wR7OeJp1StKSCyaaZ8iT9gRMYXxLLlX6gfrRnCEqL7jpRyJnXf4gmQ4Q2dXq9oyCyouxEDwvKdh4Xz4vT6nwUANkrztH-~YAbRSz~A5D9AbXUgZ1D8QNVw9AZzwB5qPEvaH-sMawgfy6xFb-IxaI0z3efYVSF4lC5SK1jFV05nJ2qDx41JHmJFvbjLLxUd7FNwjldgQ-XiDvYOZ5Kq6o131drNDAu29Clog2Ghsb5rzOgbNov~8g1BmwyjuBLYILmokW0sxon1bPcX80CFz5-fQxNJUXVyYyzYzceS1XokY88nyLjyEFjg__',
+      src: 'https://i.ibb.co/k89md15/10f664a176f07d4a2601d540781321ba.png',
       alt: 'Astronauts Image',
     }}
   >
@@ -208,34 +213,24 @@ const metadata = {
     classes={{ container: 'max-w-6xl' }}
     items={[
       {
-        title: 'Why Askremotely?',
+        title: 'What is our motivation?',
         description:
-          "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
+          'With the rise of AI and LLMs, there exists a growing cocnern about using LLMs with private and confidential data. This gives rise to the need for offline AI solutions.',
       },
       {
-        title: 'What do I need to start?',
+        title: 'Why AskInternally?',
         description:
-          'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
+          "AskInternally places a heavy emphasis on data privacy and security that is achieved through AI models that run completely on local machines. Moreover, it supports effecient data storage through RAG. In collaboration with the University of Waterloo, work is being done to develop multimodal knowledge graphs.",
       },
       {
         title: 'Do you provide ongoing support?',
         description:
-          "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
+          "Yes, we will provide consulting services and model fine-tuning. Moreover, we will help set up models of your choice including, but not limited to GPT-4, Gemini, Llama 3, and Claude.",
       },
       {
         title: 'How do you manage Data Privacy?',
         description:
-          "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
-      },
-      {
-        title: "What is something that you would like to try again?",
-        description:
-          "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
-      },
-      {
-        title: 'If you could only ask one question to each person you meet, what would that question be?',
-        description:
-          "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
+          "Data privacy is achieved through your organization's information being strictly limited to local machines. Confidential data will not be stored online.",
       },
     ]}
   />

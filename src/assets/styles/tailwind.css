@@ -97,7 +97,9 @@ body {
   font-family: Inter, sans-serif;
 }
 
+
 .ellipseDiv {
+  z-index: 100;
   width: 100%;
   position: relative;
   filter: blur(385px);
@@ -105,5 +107,5 @@ body {
   background-color: #0b63e5;
   height: 503px;
   opacity: 0.8;
-  }
+}
   
