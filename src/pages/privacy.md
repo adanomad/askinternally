@@ -36,7 +36,6 @@ For the purposes of this Privacy Policy:
 ### Types of Data Collected
 
 #### Personal Data
-
 While using Our Service, We may ask You to provide Us with certain personally identifiable information that can be used to contact or identify You. Personally identifiable information may include, but is not limited to:
 
 - Usage Data
@@ -182,4 +181,4 @@ You are advised to review this Privacy Policy periodically for any changes. Chan
 
 If you have any questions about this Privacy Policy, You can contact us:
 
-- By email: somecoolemail@domain.com
+- By email: askremotely@adanomad.com

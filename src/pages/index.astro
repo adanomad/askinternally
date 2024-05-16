@@ -11,6 +11,7 @@ import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import { Image } from 'astro:assets';
 
 const metadata = {
   title: 'AskInternally — Experience our AI-powered platform: interact with your AI assistant, run models offline, and chat using your data — all locally and privately.',
@@ -26,39 +27,41 @@ const metadata = {
     <div class="absolute right-0 top-1/2 -mt-40 mr-[-50px] w-80 h-80 bg-purple-600 bg-opacity-30 blur-3xl rounded-full"></div>
     <div class="absolute left-1/2 transform -translate-x-1/2 top-1/2 -mt-32 -ml-24 w-3/5 h-64 bg-blue-600 bg-opacity-30 blur-3xl rounded-full"></div>
     <div class="absolute right-1/4 transform translate-x-1/3 top-1/2 -mt-32 mr-24 w-3/5 h-64 bg-blue-500 bg-opacity-30 blur-3xl rounded-full"></div>
-    <Hero class="ellipseDiv"
+    <div class="h-screen flex flex-col justify-center items-center">
+    <Hero
       actions={[
         {
           variant: 'primary',
           text: 'Get Started',
-          href: 'https://github.com/onwidget/astrowind',
+          href: '',
           target: '_blank',
           icon: 'tabler:click',
         },
         { text: 'Sign in with Google', 
-          href: '#features', 
+          href: '', 
           icon: 'tabler:brand-google',
           },
       ]}>
     
     
-    <Fragment slot="title">
+    <Fragment slot="title"
       <span class="text-accent dark:text-white highlight"> AskInternally, </span> Your Offline AI
         Knowledge Assistant
     </Fragment>
-
+    
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
         Experience our AI-powered platform: interact with your AI assistant, run models offline, and chat using your data — all locally and privately.
       </span>
-      
+    
     </Fragment>
     
   </Hero>
+  </div>
 
   
   <!-- Features Widget *************** -->
-
+  <div class="h-screen flex flex-col justify-center items-center">
   <Features
     id="features"
     tagline="Features"
@@ -92,9 +95,9 @@ const metadata = {
       
     ]}
   />
-
+  </div>
   <!-- Content Widget **************** -->
-
+  
   <Content
     isReversed
     tagline="Discover"
@@ -117,12 +120,13 @@ const metadata = {
       },
     ]}
     
-    image={{
-      src: 'https://i.ibb.co/wJPVZ0L/2a12c26e41e784706eebc097db53bab9.png',
-      alt: 'Colorful Image',
+    >
+
+     image={{
+      src: '',
+      alt: 'placeholder',
     }}
 
-  >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Market Opportunity</h3>
     </Fragment>
@@ -131,7 +135,6 @@ const metadata = {
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
-
   <!-- Content Widget **************** -->
   
   <Content
@@ -144,7 +147,7 @@ const metadata = {
       {
         title: 'Leveraging Local AI Expertise',
         description:
-          'By tapping into the rich AI talent pool in Canada, especially in Toronto and Montreal, we aim to develop cutting-edge solutions.',
+          'By tapping into the rich AI talent pool in Canada, especially in Toronto, Montreal, and Waterloo, we aim to develop cutting-edge solutions.',
       },
       {
         title: 'Competitive Edge',
@@ -152,10 +155,12 @@ const metadata = {
           "Our advanced approach positions us to compete effectively with industry leaders such as Cognition Labs.",
       },
     ]}
+    
     image={{
-      src: 'https://i.ibb.co/HXqn4W1/technology-background-abstract-connected-dots-lines-blue-background-34629-1094.jpg',
-      alt: 'Blueprint Image',
+      src: '',
+      alt: 'placeholder',
     }}
+
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Competitive Advantage</h3>
@@ -167,7 +172,7 @@ const metadata = {
   </Content>
 
   <!-- Content Widget **************** -->
-
+  
   <Content
     isReversed
     isAfterContent
@@ -189,8 +194,8 @@ const metadata = {
       },
     ]}
     image={{
-      src: 'https://i.ibb.co/k89md15/10f664a176f07d4a2601d540781321ba.png',
-      alt: 'Astronauts Image',
+      src: '',
+      alt: 'placeholder',
     }}
   >
     <Fragment slot="content">
@@ -201,12 +206,12 @@ const metadata = {
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
-
+  
   
 
   <!-- FAQs Widget ******************* -->
-
-  <FAQs
+  <div class="h-screen flex flex-col justify-center items-center">
+  <FAQs id="faq"
     title="Frequently Asked Questions"
     subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
     tagline="FAQs"
@@ -215,7 +220,7 @@ const metadata = {
       {
         title: 'What is our motivation?',
         description:
-          'With the rise of AI and LLMs, there exists a growing cocnern about using LLMs with private and confidential data. This gives rise to the need for offline AI solutions.',
+          'With the rise of AI and LLMs, there exists a growing concern about using LLMs with private and confidential data. This gives rise to the need for offline AI solutions.',
       },
       {
         title: 'Why AskInternally?',
@@ -234,5 +239,5 @@ const metadata = {
       },
     ]}
   />
-
+  </div>
 </Layout>
